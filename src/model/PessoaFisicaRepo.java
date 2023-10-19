@@ -9,7 +9,6 @@ public class PessoaFisicaRepo {
     public void inserir(PessoaFisica pessoaFisica) {
         pessoasFisicas.add(pessoaFisica);
     }
-
     public void alterar(PessoaFisica pessoaFisica) {
         for (int i =0; i < pessoasFisicas.size(); i++) {
             if (pessoasFisicas.get(i).getId() == pessoaFisica.getId()) {
@@ -18,7 +17,6 @@ public class PessoaFisicaRepo {
             }
         }
     }
-
     public void excluir(int id) {
         pessoasFisicas.removeIf(p -> p.getId() == id);
     }

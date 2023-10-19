@@ -19,14 +19,8 @@ public class PessoaJuridica extends Pessoa implements Serializable {
         this.cnpj = cnpj;
     }
 
-    public PessoaJuridica(int id, String nome) {
-        super(id, nome);
-
-    }
-
     @Override
     public String toString() {
-        return "Id: " + getId() + "\nNome: " + getNome() + "\nCNPJ: " + cnpj;
+        return "ID: " + getId() + ", Nome: " + getNome() + ", CNPJ: " + cnpj;
     }
-
 }

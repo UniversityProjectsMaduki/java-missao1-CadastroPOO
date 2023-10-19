@@ -16,11 +16,9 @@ public class PessoaJuridicaRepo {
             }
         }
     }
-
     public void excluir(int id) {
         pessoasJuridicas.removeIf(p -> p.getId() == id);
     }
-
     public PessoaJuridica obter(int id) {
         for (PessoaJuridica p : pessoasJuridicas) {
             if (p.getId() == id) {
