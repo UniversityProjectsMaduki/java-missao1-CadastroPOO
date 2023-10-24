@@ -20,7 +20,10 @@ public class PessoaJuridica extends Pessoa implements Serializable {
     }
 
     @Override
-    public String toString() {
-        return "ID: " + getId() + ", Nome: " + getNome() + ", CNPJ: " + cnpj;
+    public void exibir() {
+        System.out.println("Id: " + getId());
+        System.out.println("Nome: " + getNome());
+        System.out.println("CNPJ: " + cnpj);
     }
+
 }
