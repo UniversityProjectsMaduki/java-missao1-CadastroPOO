@@ -148,7 +148,7 @@ public class Main {
                     char tipoExibir = sc.nextLine().charAt(0);
                     if (tipoExibir == 'F' || tipoExibir == 'f') {
                         System.out.println("Pessoas Físicas: ");
-                        for (PessoaFisica pf : repoFisica.obeterTodos()) {
+                        for (PessoaFisica pf : repoFisica.obterTodos()) {
                             System.out.println(pf);  // Isso chama o método toString() da instância pf
                         }
                     } else if (tipoExibir == 'J' || tipoExibir == 'j') {
