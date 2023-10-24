@@ -30,8 +30,12 @@ public class PessoaFisica extends Pessoa implements Serializable {
 
     @Override
     public void exibir() {
-        System.out.println("ID: " + getId() + ", Nome: " + getNome() + ", CPF: " + cpf + ", Idade: " + idade);
+        System.out.println("Id: " + getId());
+        System.out.println("Nome: " + getNome());
+        System.out.println("CPF: " + cpf);
+        System.out.println("Idade: " + idade);
     }
+
 
 
     @Override
